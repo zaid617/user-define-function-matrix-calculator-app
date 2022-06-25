@@ -9,10 +9,11 @@ function add(mats_1, mats_2) {
 
     //    initiallizing arrays
 
-    let result = [[], [], [], [], [], [], [], [], [], []];
+    let result = [];
     // addition of martix 1 and 2
     for (i = 0; i < input_1; i++) {
         for (j = 0; j < input_2; j++) {
+            if (result[i] === undefined) result[i] = []
             result[i][j] = mats_1[i][j] + mats_2[i][j];
         }
 
@@ -31,10 +32,11 @@ function diff(mats_1, mats_2) {
 
     //    initiallizing arrays
 
-    let result = [[], [], [], [], [], [], [], [], [], []];
+    let result = [];
     // addition of martix 1 and 2
     for (i = 0; i < input_1; i++) {
         for (j = 0; j < input_2; j++) {
+            if (result[i] === undefined) result[i] = []
             result[i][j] = mats_1[i][j] - mats_2[i][j];
         }
 
@@ -53,11 +55,12 @@ function product(mats_1, mats_2) {
 
     //    initiallizing array
 
-    let result = [[], [], [], [], [], [], [], [], [], []];
+    let result = [];
 
     // addition of martix 1 and 2
     for (let i = 0; i < input_1; i++) {
         for (let j = 0; j < input_1; j++) {
+            if (result[i] === undefined) result[i] = []
             result[i][j] = 0;
             for (let k = 0; k < input_1; k++) {
                 result[i][j] += mats_1[i][k] * mats_2[k][j];
@@ -156,13 +159,14 @@ function calc() {
     input_2 = Number(input_2);
 
     //    initiallizing arrays
-    let mats_1 = [[], [], [], [], [], [], [], [], [], []];
-    let mats_2 = [[], [], [], [], [], [], [], [], [], []];
-    let result = [[], [], [], [], [], [], [], [], [], []];
+    let mats_1 = [];
+    let mats_2 = [];
+    let result = [];
 
     // getting values from 1st matrix 
     for (let i = 0; i < input_1; i++) {
         for (let j = 0; j < input_2; j++) {
+            if (mats_1[i] === undefined) mats_1[i] = []
             mats_1[i][j] = Number(document.getElementById(`mat1_${[i]}${[j]}`).value);
         }
 
@@ -170,6 +174,7 @@ function calc() {
     // getting values from 2nd matrix 
     for (i = 0; i < input_1; i++) {
         for (j = 0; j < input_2; j++) {
+            if (mats_2[i] === undefined) mats_2[i] = []
             mats_2[i][j] = Number(document.getElementById(`mat2_${[i]}${[j]}`).value);
         }
 
@@ -213,6 +218,7 @@ function calc() {
 
         for (i = 0; i < input_1; i++) {
             for (j = 0; j < input_2; j++) {
+                if (result[i] === undefined) result[i] = []
                 document.getElementById(`div_${i}${j}`).innerText += result[i][j];
             }
 
