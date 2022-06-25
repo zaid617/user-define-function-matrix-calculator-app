@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:580px)" href="tablet.css">
+    <link rel="stylesheet" media="screen and (max-width:390px)" href="mobile.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Matrix Calculation App</h1>
+    </header>
+
+
+    <form onsubmit="start(); return false"; id="form1">
+    <div class="box">
+       <div class="sep"><label for="input_1">No. of Rows :</label> <input type="number" required id="input_1" placeholder="2" min="2" max="10"></div>
+       <div class="sep"><label for="input_2">No. of Columns : </label> <input type="number" required id="input_2" placeholder="2" min="2" max="10"></div>
+       <button type="submit" class="btn"  id="btn1">Start</button>
+    </div>
+    
+    </form>
+
+
+    <form onsubmit="calc(); return false"; id="form2">
+
+        <div class="matBox">
+            <div id="mat_1" class="matrix"></div>
+            <h1 class="matrixs" id="sign">+</h1>
+            <div id="mat_2" class="matrix"></div>
+            <h1 class="matrixs">=</h1>
+            <div id="result" class="matrix"></div>
+        </div>
+        <select name="func" id="select">
+            <option value="func"><div id="func">Addition</div> </option>
+            <option value="func"><div id="func">Subtraction</div> </option>
+            <option value="func"><div id="func">Multiplication</div> </option>
+        </select>
+        <br>
+        <button type="submit" class="btn">Calculate</button>
+    </form>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>

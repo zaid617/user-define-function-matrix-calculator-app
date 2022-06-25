@@ -1,0 +1,29 @@
+
+header{
+    font-size: 0.6em;
+}
+ label{
+     font-size: 0.9em;
+ }
+ .sep {
+     width: 130px;
+ }
+ .btn{
+    width: 65px;
+    font-size: 0.9em;
+    height: 25px;
+    border-radius: 2px solid white;
+ }
+ .vals{
+    width: 15px;
+    height: 15px;
+    margin: 2px;
+    font-size: small;
+ }
+ .input_all{
+     width: 20px;
+ }
+ .matrix{
+     padding: 0px;
+ }
+ 
