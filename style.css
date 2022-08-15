@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 body{
-    background:linear-gradient(#6A67CE,#EEF3D2) ;
+    background:linear-gradient(#6A67CE,#EEF3D2) center fixed ;
+    background-size: cover;
     height: 100vh;
 }
 

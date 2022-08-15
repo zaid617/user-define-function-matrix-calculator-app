@@ -106,7 +106,7 @@ function start() {
         for (let i = 0; i < input_1; i++) {
             for (let j = 0; j < input_2; j++) {
 
-                document.querySelector('#mat_1').innerHTML += (`<input type="number" placeholder="0" required id="mat1_${[i]}${[j]}" class="vals">`)
+                document.querySelector('#mat_1').innerHTML += (`<input type="number" value="0"  id="mat1_${[i]}${[j]}" class="vals">`)
             }
             document.querySelector('#mat_1').innerHTML += ("<br>")
 
@@ -118,7 +118,7 @@ function start() {
         for (i = 0; i < input_1; i++) {
             for (j = 0; j < input_2; j++) {
 
-                document.querySelector('#mat_2').innerHTML += (`<input type="number" placeholder="0" required id="mat2_${[i]}${[j]}" class="vals">`)
+                document.querySelector('#mat_2').innerHTML += (`<input type="number" value="0" id="mat2_${[i]}${[j]}" class="vals">`)
             }
             document.querySelector('#mat_2').innerHTML += ("<br>")
 
